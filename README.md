@@ -146,14 +146,18 @@ Las consultas de escritura usan parámetros SQL. El formulario transforma valore
 
 ## 11. Soporte técnico y procedimiento de reporte
 
-Reportar al responsable técnico del proyecto mediante el canal de soporte definido por la organización. Incluir:
+- **Contacto de soporte técnico:** Joselyn Hernández
+- **Teléfono:** +507 6304-2189
+- **Correo electrónico:** ac1joselyn@gmail.com
+
+Al reportar un problema, incluir:
 
 1. Sistema operativo, versión de Python y versiones de dependencias instaladas.
 2. Pasos para reproducir el problema, resultado esperado y resultado observado.
 3. Momento aproximado del incidente y operación afectada (consulta, alta, edición o imagen).
 4. Mensaje de error y, si aplica, detalles de conectividad con MySQL.
 
-Antes de compartir el reporte, eliminar contraseñas, valores de `.env`, datos personales de contactos, contenido de la base y URLs privadas. No se define en el repositorio un canal, horario o SLA de soporte.
+Antes de compartir el reporte, eliminar contraseñas, valores de `.env`, datos personales de contactos, contenido de la base y URLs privadas.
 
 ## 12. Versión, fecha de actualización e historial de cambios
 
