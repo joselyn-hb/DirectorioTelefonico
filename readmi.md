@@ -1,3 +1,5 @@
+
+
 # Directorio Telefónico
 
 Aplicación de escritorio para consultar y administrar contactos almacenados en MySQL.
