@@ -1,0 +1,58 @@
+# Configuracion local y secretos
+.env
+.env.*
+!.env.example
+!.env.template
+secrets.*
+credentials.json
+*.pem
+*.key
+*.p12
+*.pfx
+
+# Python y entornos virtuales
+__pycache__/
+*.py[cod]
+*.pyd
+.venv/
+venv/
+env/
+
+# Archivos temporales, registros y pruebas
+*.log
+*.tmp
+*.temp
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# Paquetes y ejecutables generados
+build/
+dist/
+*.exe
+
+# Datos locales, exportaciones y respaldos (pueden contener datos personales)
+backups/
+exports/
+data/private/
+*.bak
+*.backup
+*.dump
+*.sql.gz
+*.sqlite
+*.sqlite3
+*.db
+
+# Documentos locales o confidenciales: usar estos sufijos en sus nombres
+*.local.md
+*_privado.*
+*_confidencial.*
+
+# Preferencias del editor y archivos del sistema
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+desktop.ini

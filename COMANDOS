@@ -1,0 +1,33 @@
+# Crear un entorno virtuaaaal
+python -m venv .venv
+
+Para activarlo en Windows
+.venv\Scripts\Activate.ps1
+
+para desactivar un entorno virtual .venv
+deactivate
+
+para eliminar una carpeta .venv
+Remove-Item .venv _Recurse -Force
+
+para instalar las dependencias y librerias de un archivo requirements
+pip install -r requirements.txt
+
+para crear un  archivo requirements.txt en el pporyecto
+pip freezze > requirements.txt
+
+
+para instalar libreria para manejo de imagenes
+pip install pillow
+
+para instalar libreria de MySQL
+pip install mysql-connector-python
+
+validar las dependencias instaladas
+pip freezze
+
+crear archivo ejecutable .exe
+pip install auto-py-to-exe
+
+ejecutar interface grafica
+auto-py-to-exe
