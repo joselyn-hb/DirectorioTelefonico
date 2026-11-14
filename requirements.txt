@@ -1,0 +1,5 @@
+customtkinter
+Flask
+mysql-connector-python
+Pillow
+python-dotenv

@@ -1,0 +1,7 @@
+<div class="form-grid">
+  <label>Nombre <span>*</span><input name="nombre" required maxlength="100" autocomplete="given-name" value="{{ selected.nombre if selected else '' }}"></label>
+  <label>Apellido <span>*</span><input name="apellido" required maxlength="100" autocomplete="family-name" value="{{ selected.apellido if selected else '' }}"></label>
+  <label>Teléfono<input name="telefono" type="tel" maxlength="40" autocomplete="tel" value="{{ selected.telefono if selected else '' }}"></label>
+  <label>Correo electrónico<input name="email" type="email" maxlength="254" autocomplete="email" value="{{ selected.email if selected else '' }}"></label>
+  <label class="full-field">Cargo<input name="role" maxlength="100" value="{{ selected.role if selected else '' }}" placeholder="Ej. Coordinación"></label>
+</div>

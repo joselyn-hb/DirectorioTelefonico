@@ -54,9 +54,14 @@ flowchart TD
 ```text
 .
 ├── DirectorioTelefonico.py   # Interfaz, carga de imágenes y acceso a MySQL
+├── app.py                    # Servidor web Flask para el directorio
+├── demo/                     # Demo web estática con datos ficticios
+├── templates/                # Vistas HTML de la interfaz web
+├── static/css/               # Estilos de la interfaz web
 ├── resource_path.py          # Resolución de rutas para desarrollo o PyInstaller
 ├── COMANDOS                  # Apuntes de instalación y empaquetado
 ├── README.md                 # Esta documentación
+├── requirements.txt          # Dependencias de escritorio y web
 ├── static/
 │   └── imagen/
 │       ├── logo.ico
@@ -108,7 +113,7 @@ En PowerShell, desde la carpeta del proyecto:
 ```powershell
 python -m venv .venv
 .\.venv\Scripts\Activate.ps1
-python -m pip install customtkinter mysql-connector-python Pillow python-dotenv
+python -m pip install -r requirements.txt
 ```
 
 Configurar `.env` con los parámetros de conexión (sin compartir sus valores) y ejecutar:
@@ -116,6 +121,20 @@ Configurar `.env` con los parámetros de conexión (sin compartir sus valores) y
 ```powershell
 python .\DirectorioTelefonico.py
 ```
+
+### Interfaz web
+
+Con las dependencias instaladas y `.env` configurado, iniciar el servidor local:
+
+```powershell
+python .\app.py
+```
+
+Abrir `http://127.0.0.1:5000`. La interfaz permite buscar, consultar, agregar y editar contactos en la misma tabla MySQL `usuarios`. El servidor escucha solo en la computadora local de forma predeterminada.
+
+### Demo para portafolio
+
+La carpeta `demo/` contiene una versión estática con datos ficticios. Se puede publicar en un hosting estático (por ejemplo, GitHub Pages) sin MySQL, credenciales ni servidor Flask. El buscador y los formularios funcionan en el navegador; los cambios no se guardan al recargar la página.
 
 **Pruebas:** no se encontró suite automatizada ni comando de pruebas. La verificación manual mínima consiste en iniciar la aplicación, revisar la carga de contactos, filtrar, consultar detalle, crear y editar un registro, y comprobar el comportamiento cuando MySQL no está disponible.
 
